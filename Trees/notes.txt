@@ -1,0 +1,31 @@
+typedef struct node {
+	
+	int data;
+	struct node *left,*right;
+} node;
+
+typedef struct head {
+	node *root;
+}
+
+BFS = queue
+DFS = stack
+
+[1,2,3,4,5]
+
+parent = i
+left child = 2*i+1
+right child = 2*i+2
+
+parent = (j-1)/2 if left or right = j
+
+create left child
+
+tree = [] #Array
+def create_left(data,parent_ind)
+	tree[2*parent_ind + 1] = data
+
+
+
+
+

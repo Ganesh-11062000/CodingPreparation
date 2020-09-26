@@ -1,0 +1,32 @@
+BFS
+
+function BFS(start):
+	queue = []
+	visited = []
+
+	queue.append(start)
+	visited[start] = True
+
+	while queue != NULL:
+		u = queue.pop(0)
+
+		for v in adj[u]:
+			if visited[v] == False:
+				queue.append(v)
+
+
+DFS
+
+function DFSUtil(u,visited):
+	visited[u] = True
+
+	for v in adj[u]:
+		if visited[v] == False:
+			DFSUtil(v,visited)
+
+
+function DFS(start):
+	visited = []
+
+	DFSUtil(start,visited)
+

@@ -1,0 +1,38 @@
+ways to store a string
+
+vector<string> arr;
+arr.push_back("abc");
+
+string arr[4];
+arr[0] = "abc";
+
+in C, string is same as char array but ends with '/0'
+
+in C++, 
+memory for char array gets allocated statically
+- wastage of unused memory
+- cannot increase size at runtime
+memory for string is alocatedd dynamically
+- no memory wastage
+- more memory can be allocated att runtime
+
+read a string
+getlin(cin,str);
+str.length()
+str.push_back('c');
+ch = str.pop_back(); 
+
+for(auto it=str.begin();it != str.end();it++){
+	cout << *it << "";
+}
+
+s1.compareTo(s2) 
+equal -> 0
+s1 > s2 -> +ve
+s1 < s2 -> -ve
+
+----------------------------------------
+
+
+
+
